@@ -4,9 +4,12 @@
   "version": "0.1.0",
   "packageManager": "pnpm@8.10.5",
   "description": "Watch the file of folder change and force restart Vite server",
+  "homepage": "https://github.com/cccnobody/vite-plugin-watch-and-restart",
   "repository": {
-    "type": "git"
+    "type": "git",
+    "url": "https://github.com/cccnobody/vite-plugin-watch-and-restart"
   },
+  "bugs": "https://github.com/cccnobody/vite-plugin-watch-and-restart/issues",
   "keywords": [
     "vite-plugin"
   ],
@@ -35,12 +38,10 @@
   },
   "devDependencies": {
     "@types/debug": "^4.1.12",
-    "@types/lodash": "^4.1.1",
     "@types/node": "^20.9.1",
     "bumpp": "^9.2.0",
     "chalk": "^5.3.0",
     "eslint": "^8.53.0",
-    "lodash": "^4.17.21",
     "rollup": "^4.4.1",
     "tsup": "^7.3.0",
     "typescript": "^5.2.2",

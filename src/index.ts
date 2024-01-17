@@ -2,8 +2,20 @@ import fs from 'node:fs'
 import process from 'node:process'
 import console from 'node:console'
 import chalk from 'chalk'
-import debounce from 'lodash/debounce'
 import type { Plugin } from 'vite'
+
+function debounce<F extends (...args: any[]) => void>(func: F, waitFor: number): (...args: Parameters<F>) => void {
+  let timeout: ReturnType<typeof setTimeout> | null = null
+
+  return function(this: ThisParameterType<F>, ...args: Parameters<F>): void {
+    if (timeout !== null) {
+      clearTimeout(timeout)
+    }
+    timeout = setTimeout(() => {
+      func.apply(this, args)
+    }, waitFor)
+  }
+}
 
 export interface VitePluginWatchARestartOptions {
   /**
