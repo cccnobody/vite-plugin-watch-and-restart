@@ -1,3 +1,11 @@
+# Prop
+
+|  Prop   | Type  | Required  | Default  | Description  |
+|  ----  | ----  | ----  | ----  | ----  |
+| path  | string | ✅ | -  | The file or folder path to watch  |
+| isForce  | boolean | ❌ | false  | Ignoring previously cached optimized dependencies  |
+| delay  | boolean | ❌ | 500  | Restart after 500ms |
+
 # Usage
 
 Install
