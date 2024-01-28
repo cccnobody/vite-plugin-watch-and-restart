@@ -1,7 +1,7 @@
 {
   "name": "vite-plugin-watch-and-restart",
   "type": "module",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "packageManager": "pnpm@8.10.5",
   "description": "Watch the file of folder change and force restart Vite server",
   "homepage": "https://github.com/cccnobody/vite-plugin-watch-and-restart",
